@@ -9,16 +9,12 @@ function MenuController(CheesecakeFactory) {
     var Menu = this
 
     Menu.title = 'Awesome Cheesecake'
-    Menu.search = '' // nice to have, better semantically
+    Menu.search = '' 
 
-    // assigned by refernce
+    
     Menu.items = CheesecakeFactory.menuItems
 
-    /*
-        [{ value: 4},{vaule:3},{value:6},{value:10}].filter(function(item){
-          return item.value > 5
-        })
-    */
+    
 
     Menu.lowCalories = function(item) {
         return item.calories < 2000
